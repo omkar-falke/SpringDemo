@@ -1,0 +1,8 @@
+package com.service;
+
+import com.model.Deparment;
+
+public interface Service {
+	
+	public void addDeparment(Deparment d);
+}

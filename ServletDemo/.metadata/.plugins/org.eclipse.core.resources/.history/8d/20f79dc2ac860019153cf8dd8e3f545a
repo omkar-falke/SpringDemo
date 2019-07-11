@@ -1,0 +1,16 @@
+package com.dao;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Deparment {
+	
+	
+	private int dId;
+	private String dName;
+	private String dEmail;
+	private String ContactNo;
+	private String facultyList;
+	
+
+}

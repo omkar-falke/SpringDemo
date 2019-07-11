@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Dept Here</title>
+</head>
+<body>
+<pre>
+
+dId  <input type="text" name="did">
+DNAme  <input type="text" name="dname">
+Demail <input type="email" name="email">
+
+Contact No <input type="text" name="contact">
+
+facultyList <input type="text" name="flist">
+
+Profit <input type="text" name="profit">
+
+Password <input type="password" name="pass">
+
+<input type="submit" value="Submit">
+
+</pre>
+
+</body>
+</html>

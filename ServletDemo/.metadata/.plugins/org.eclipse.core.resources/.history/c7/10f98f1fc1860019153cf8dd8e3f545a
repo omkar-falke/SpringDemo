@@ -1,0 +1,56 @@
+<%@page import="com.model.Deparment"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Success</title>
+<script type="text/javascript">
+
+function mydelete() {
+	
+	alert("Delete");
+	document.crud.action="delete"
+	document.crud.submit()
+}
+
+</script>
+</head>
+<body>
+<form name="crud">
+<table border="1" height="100%" width="100%">
+<h1>Success Page</h1>
+<th>Select</th>
+<th>ID</th>
+<th>DName</th>
+<th>Email</th>
+<th>Contact </th>
+<th>Faculty</th>
+<th>Profit</th>
+<th>password</th>
+
+<% List<Deparment>list=(List<Deparment>)request.getAttribute("data");
+
+		for(Deparment d:list)
+		{
+			%>
+			<tr>
+			<td> <input type="radio" name="id" value="<%=d.getdId() %>">
+			<td><%=d.getdId() %></td>
+			<td><%=d.getdName() %></td>
+			<td><%=d.getdEmail() %></td>
+			<td><%=d.getContactNo() %></td>
+			<td><%=d.getFacultyList() %></td>
+			<td><%=d.getProfit() %></td>
+			<td><%=d.getPassword() %></td>
+		<% }%>
+
+</tr>
+</table>
+
+<input type="button" value="Delete" onclick="mydelete()">
+</form>
+</body>
+</html>

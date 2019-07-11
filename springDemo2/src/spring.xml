@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+				<bean id="conn" class="demo.Employee">
+				<property name="id" value="1"></property>
+					<property name="name" value="omkar"></property>
+					<property name="address" value="Pune"></property>
+				</bean>
+			</beans>

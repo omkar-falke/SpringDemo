@@ -1,0 +1,53 @@
+package com.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.model.Deparment;
+import com.service.Service;
+import com.serviceimp.ServiceImp;
+@WebServlet(urlPatterns="/dept")
+public class DeptServlet  extends HttpServlet
+{
+
+		@Override
+		protected void service(HttpServletRequest request, HttpServletResponse response)
+				throws ServletException, IOException {
+			
+//			String did=request.getParameter("did");
+			
+			Deparment d=new Deparment();
+			Service s=new ServiceImp();
+			
+			String dname=request.getParameter("dname");
+			
+			String demail=request.getParameter("email");
+			
+			String contact=request.getParameter("contact");
+			 
+			String fname=request.getParameter("fname");
+			
+			String profit=request.getParameter("profit");
+			
+			String password=request.getParameter("password");
+			
+			d.setdName(dname);
+			d.setdEmail(demail);
+			d.setContactNo(contact);
+			d.setFacultyList(fname);
+			d.setProfit(profit);
+			d.setPassword(password);
+			
+			s.addDeparment(d);
+			
+			
+			
+			
+			
+		}
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+<bean id="dd" class="com.test.College">
+<constructor-arg value="Siom"></constructor-arg>
+</bean>
+
+<bean id="dept" class="com.test.Dept">
+<constructor-arg value="101"></constructor-arg>
+<constructor-arg value="computer"></constructor-arg>
+<constructor-arg  ref="c"></constructor-arg>
+</bean>
+</beans>

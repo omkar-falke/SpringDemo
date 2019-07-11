@@ -1,0 +1,36 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="li" class="com.demo.Prof">
+		<constructor-arg>
+			<list>
+				<value> bharati</value>
+				<value>Dips</value>
+				<value>Prnaju</value>
+				<value>swami</value>
+			</list>
+		</constructor-arg>
+
+
+		<constructor-arg>
+			<set>
+				<value> 9028325325</value>
+				<value> 9028325325</value>
+				<value> 9028325365</value>
+				<value> 9028325385</value>
+			</set>
+		</constructor-arg>
+
+		<constructor-arg>
+			<map>
+				<entry key="India" value="Mumbai"></entry>
+				<entry key="Pak" value="Lahor"></entry>
+				<entry key="Us" value="Washington"></entry>
+				<entry key="UK" value="London"></entry>
+			</map>
+		</constructor-arg>
+
+	</bean>
+</beans>

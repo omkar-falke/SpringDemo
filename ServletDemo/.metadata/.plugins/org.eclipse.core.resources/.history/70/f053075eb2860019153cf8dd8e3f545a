@@ -1,0 +1,17 @@
+package com.daoimp;
+
+import com.dao.Dao;
+import com.model.Deparment;
+
+public class DaoImp  implements Dao{
+	
+	Dao d1=new DaoImp();
+	
+	@Override
+	public void addDeparment(Deparment d) {
+		d1.addDeparment(d);
+		
+	}
+
+
+}

@@ -1,0 +1,8 @@
+package com.daoimp;
+
+import com.dao.Dao;
+
+public class DaoImp  implements Dao{
+
+
+}

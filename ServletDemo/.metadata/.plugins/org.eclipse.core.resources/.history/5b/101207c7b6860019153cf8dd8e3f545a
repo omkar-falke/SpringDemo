@@ -1,0 +1,32 @@
+package com.daoimp;
+
+import java.util.List;
+
+import org.hibernate.Session;
+
+import com.dao.Dao;
+import com.model.Deparment;
+import com.utility.HibernateUtil;
+
+public class DaoImp  implements Dao{
+	
+
+	
+	@Override
+	public void addDeparment(Deparment d) {
+		
+		Session session=HibernateUtil.getSessionFactory().openSession();
+		
+		session.save(d);
+		session.beginTransaction().commit();
+		
+	}
+
+	@Override
+	public List<Deparment> showData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

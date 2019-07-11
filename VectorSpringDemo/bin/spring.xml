@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+
+
+	<bean id="c" class="com.demo.Dept">
+		<property name="fruit">
+			<util:list list-class="java.util.Vector">
+				<value>Apple</value>
+				<value>Mango</value>
+			</util:list>
+		</property>
+
+		<property name="cricket">
+			<util:set set-class="java.util.TreeSet">
+				<value>omkar</value>
+				<value>pranay</value>
+			</util:set>
+		</property>
+
+		<property name="hs">
+			<util:map map-class="java.util.Hashtable">
+				<entry key="india" value="delhi"></entry>
+				<entry key="USA" value="Washington"></entry>
+			</util:map>
+		</property>
+	</bean>
+	</beans>

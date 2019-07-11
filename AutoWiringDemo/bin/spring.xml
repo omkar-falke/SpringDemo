@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="add" class="demo.Address">
+		<property name="cityname" value="paithan"></property>
+	</bean>
+	
+	<bean id="addr" class="demo.Student" autowire="byType">
+		<property name="sid" value="101"></property>
+		<property name="sname" value="nayan"></property>
+	</bean>
+
+</beans>

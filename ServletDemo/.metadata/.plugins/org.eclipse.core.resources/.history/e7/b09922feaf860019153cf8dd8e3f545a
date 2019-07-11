@@ -1,0 +1,13 @@
+package com.daoimp;
+
+import com.dao.Dao;
+
+public class DaoImp  implements Dao{
+
+	@Override
+	public void addDeparment() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

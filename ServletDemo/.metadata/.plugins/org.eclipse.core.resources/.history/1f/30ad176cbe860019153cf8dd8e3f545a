@@ -1,0 +1,39 @@
+package com.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+import com.dao.Dao;
+import com.daoimp.DaoImp;
+import com.model.Deparment;
+
+@WebServlet(urlPatterns="/delete")
+public class DeleteServlet  extends HttpServlet{
+	
+	@Override
+	public void service(ServletRequest request, ServletResponse response)
+			throws ServletException, IOException {
+		
+			int rd=Integer.parseInt(request.getParameter("id"));
+		
+			Dao d=new DaoImp();
+			d.deleteData( Deparment rd);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	}
+	
+
+}

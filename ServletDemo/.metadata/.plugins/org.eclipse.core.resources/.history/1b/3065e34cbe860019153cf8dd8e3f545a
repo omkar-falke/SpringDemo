@@ -1,0 +1,42 @@
+package com.daoimp;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.management.Query;
+
+import org.hibernate.Session;
+
+import com.dao.Dao;
+import com.model.Deparment;
+import com.utility.HibernateUtil;
+
+public class DaoImp  implements Dao{
+	
+
+	Session session=HibernateUtil.getSessionFactory().openSession();
+	@Override
+	public void addDeparment(Deparment d) {
+		
+		
+		
+		session.save(d);
+		session.beginTransaction().commit();
+		
+	}
+
+	@Override
+	public List<Deparment> showData() {
+		org.hibernate.query.Query<Deparment>q=session.createQuery("from Deparment",Deparment.class);
+		List<Deparment> list=q.getResultList();
+		return list;
+	}
+
+	@Override
+	public void deleteData(Deparment id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

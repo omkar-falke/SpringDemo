@@ -1,0 +1,34 @@
+package com.serviceimp;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.dao.Dao;
+import com.daoimp.DaoImp;
+import com.model.Deparment;
+import com.service.Service;
+
+public class ServiceImp  implements Service{
+	Dao d1=new DaoImp();
+	@Override
+	public void addDeparment(Deparment d) {
+		d1.addDeparment(d);
+		
+		
+	}
+	@Override
+	public List<Deparment> showData() {
+		
+		Dao d=new DaoImp();
+		List<Deparment>li=d.showData();
+		return li;
+	}
+	@Override
+	public void deleteData(Deparment id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}

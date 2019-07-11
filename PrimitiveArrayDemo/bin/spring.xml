@@ -1,0 +1,22 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+	<beans>
+		<bean id="emp" class="com.demo.Emp" scope="singleton">
+			<property name="eId" value="10"></property>
+			<property name="eName" value="omkar"> </property>
+			<property name="address">
+				<list > 
+			 		<value>pune</value>
+			  		<value>paithan</value>
+				</list>
+			</property>
+			
+			<property name="mo">
+			<list>
+				<value>902832532</value>
+				<value>98563256</value>
+			</list>
+			</property>
+		</bean>
+	</beans>

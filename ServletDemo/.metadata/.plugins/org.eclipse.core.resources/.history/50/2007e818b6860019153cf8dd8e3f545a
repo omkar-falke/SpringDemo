@@ -1,0 +1,26 @@
+package com.serviceimp;
+
+import java.util.List;
+
+import com.dao.Dao;
+import com.daoimp.DaoImp;
+import com.model.Deparment;
+import com.service.Service;
+
+public class ServiceImp  implements Service{
+	Dao d1=new DaoImp();
+	@Override
+	public void addDeparment(Deparment d) {
+		d1.addDeparment(d);
+		
+		
+	}
+	@Override
+	public List<Deparment> showData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+}
